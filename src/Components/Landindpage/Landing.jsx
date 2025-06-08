@@ -15,14 +15,14 @@ const Landing = () => {
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
-                      src="./public/images/istockphoto-1483357835-1024x1024.jpg"
+                      src="/images/istockphoto-1483357835-1024x1024.jpg"
                       class="d-block w-75 m-auto"
                       alt="..."
                     />
                   </div>
                   <div class="carousel-item w-100 text-center">
                     <img
-                      src="./public/images/istockphoto-1483357835-1024x1024.jpg"
+                      src="/images/istockphoto-1483357835-1024x1024.jpg"
                       class="d-block w-75 m-auto"
                       alt="..."
                     />
