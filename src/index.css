@@ -1,0 +1,156 @@
+/* Start navBar */
+
+body{
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #0c1719 !important;
+    z-index: 999;
+    width: 100%;
+    max-width: 100%;
+  }
+  .menu li a {
+    color: #8b9092 !important;
+    /* border-bottom: 0 solid var(--prim-color); */
+    transition: 0.3s all;
+  }
+  .menu li:hover a {
+    color: #b81f33 !important;
+   /* border-bottom: 1px solid white; */
+
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.7em !important;
+    height: 1.7em !important;
+  }
+
+  /* .menu li::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    bottom: 10px;
+  } */
+  
+  .menu li:hover::before{
+width: 90px;
+  }
+
+  /* .menu li:hover {
+    animation: line 1s
+  } */
+  .menu a {
+    font-size: 22px;
+    color: #777;
+    text-decoration: none;
+    transition: all 0.45s;
+  }
+
+
+
+
+
+  /* End navBar */
+
+
+
+
+  /* LandingPage */
+
+  .landingbg{
+
+    background-color: #0c1719;
+  }
+
+ .ourproduct{
+  background-color: rgb(218, 221, 223);
+ }
+
+.shad{
+  background-color: rgba(0, 0,0,.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(350px);
+  transition: .5s all linear ;
+}
+
+.layerwrapper{
+  cursor: pointer;
+
+}
+.layericons{
+  background-color: rgb(12, 23, 25 ,.7);
+  /* height: 100px; */
+}
+.layerwrapper:hover .shad{
+  transform: translateY(0);
+}
+
+.social{
+  transform: scale(1);
+}
+.social:hover{
+  color: #b81f33;
+  cursor: pointer;
+  transform: scale(1.2);
+
+}
+
+.member p ,  .member ul li
+ {
+  transition: .3s all linear;
+}
+
+
+
+.member p:hover , .member ul li:hover {
+color: #b81f33;
+cursor: pointer;
+}
+
+.brandss{
+  background-image: url(../public/brands/page-title-GM86wdmx.jpg);
+  padding: 6rem;
+}
+
+.brandscal{
+  background-image: url(/public/brands/page-title-GM86wdmx.jpg);
+  background-size: cover;
+  transform: scale(1);
+  transition: .4s all linear;
+}
+
+.brandscal:hover  {
+  cursor: pointer;
+  transform: scale(1.05);
+  
+}
+
+.layericons div:hover {
+  cursor: pointer;
+  color: #b81f33;
+  
+}
+
+.layericons div:not(:last-child){
+  border-bottom: 2px solid black;
+}
+
+
+.bott{
+  padding: .5rem 7rem;
+  margin-top: 2rem;
+}
