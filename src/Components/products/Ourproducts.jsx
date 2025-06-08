@@ -131,55 +131,55 @@ const Ourproducts = () => {
 
 const productdata = [
   {
-    img: "/public/products/New folder/1680395631938-cover.jpeg",
+    img: "/products/New folder/1680395631938-cover.jpeg",
     description: "Shoes",
     oldprice: "$744",
     price: "Price: $379",
   },
 
   {
-    img: "/public/products/New folder/1680396038304-cover.jpeg",
+    img: "/products/New folder/1680396038304-cover.jpeg",
     description: "Sooks",
     oldprice: "$744",
     price: "Price: $379",
   },
 
   {
-    img: "/public/products/New folder/1680399661234-cover.jpeg",
+    img: "/products/New folder/1680399661234-cover.jpeg",
     description: "Logo T-Shirt Green",
     oldprice: "$744",
     price: "Price: $379",
   },
 
   {
-    img: "/public/products/New folder/1680399913757-cover.jpeg",
+    img: "/products/New folder/1680399913757-cover.jpeg",
     description: "Grey Shoes",
     oldprice: "$744",
     price: "Price: $379",
   },
 
   {
-    img: "/public/products/New folder/1680400120400-cover.jpeg",
+    img: "/products/New folder/1680400120400-cover.jpeg",
     description: "Black Shoes",
     oldprice: "$744",
     price: "Price: $379",
   },
 
   {
-    img: "/public/products/New folder/1680395631938-cover.jpeg",
+    img: "/products/New folder/1680395631938-cover.jpeg",
     description: "Black shoes",
     oldprice: "$744",
     price: "Price: $379",
   },
 
   {
-    img: "/public/products/New folder/1680399913757-cover.jpeg",
+    img: "/products/New folder/1680399913757-cover.jpeg",
     description: "Grey shoes",
     oldprice: "$744",
     price: "Price: $379",
   },
   {
-    img: "/public/products/New folder/1680396038304-cover.jpeg",
+    img: "/products/New folder/1680396038304-cover.jpeg",
     description: "Sooks",
     oldprice: "$744",
     price: "Price: $379",
@@ -188,42 +188,42 @@ const productdata = [
 
 const prowomen = [
   {
-    img: "/public/products/women/1680403156501-cover.jpeg",
+    img: "/products/women/1680403156501-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/women/1680403266739-cover.jpeg",
+    img: "/products/women/1680403266739-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/women/1680403397402-cover.jpeg",
+    img: "/products/women/1680403397402-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/women/1680403156501-cover.jpeg",
+    img: "/products/women/1680403156501-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/women/1680403266739-cover.jpeg",
+    img: "/products/women/1680403266739-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/women/1680403156501-cover.jpeg",
+    img: "/products/women/1680403156501-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/women/1680403397402-cover.jpeg",
+    img: "/products/women/1680403397402-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/women/1680403156501-cover.jpeg",
+    img: "/products/women/1680403156501-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
@@ -232,42 +232,42 @@ const prowomen = [
 
 const Electronics = [
   {
-    img: "/public/products/electronics/1678302803089-cover.jpeg",
+    img: "/products/electronics/1678302803089-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/electronics/1678303324588-cover.jpeg",
+    img: "/products/electronics/1678303324588-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/electronics/1678303526206-cover.jpeg",
+    img: "/products/electronics/1678303526206-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/electronics/1678304313006-cover.jpeg",
+    img: "/products/electronics/1678304313006-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/electronics/1678304764905-cover.jpeg",
+    img: "/products/electronics/1678304764905-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/electronics/1678305677165-cover.jpeg",
+    img: "/products/electronics/1678305677165-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/electronics/1678302803089-cover.jpeg",
+    img: "/products/electronics/1678302803089-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
   {
-    img: "/public/products/electronics/1678303324588-cover.jpeg",
+    img: "/products/electronics/1678303324588-cover.jpeg",
     description: "Woman Shawl",
     price: "$139",
   },
