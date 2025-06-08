@@ -61,26 +61,26 @@ const Brands = () => {
 
 const brandsdata = [
   {
-    img: "/public/brands/1678285724527.png",
+    img: "/brands/1678285724527.png",
   },
 
   {
-    img: "/public/brands/1678286142113.png",
+    img: "/brands/1678286142113.png",
   },
 
   {
-    img: "/public/brands/1678286204060.png",
+    img: "/brands/1678286204060.png",
   },
 
   {
-    img: "/public/brands/1678286238428.png",
+    img: "/brands/1678286238428.png",
   },
   {
-    img: "/public/brands/1678286281363.png",
+    img: "/brands/1678286281363.png",
   },
 
   {
-    img: "/public/brands/1678285724527.png",
+    img: "/brands/1678285724527.png",
   },
 ];
 

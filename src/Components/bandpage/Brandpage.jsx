@@ -27,81 +27,81 @@ const Brandpage = () => {
 
 const data = [
   {
-    img: "/public/brands/canon.png",
+    img: "/brands/canon.png",
   },
 
   {
-    img: "/public/brands/del.png",
+    img: "/brands/del.png",
   },
 
   {
-    img: "/public/brands/infin.png",
+    img: "/brands/infin.png",
   },
 
   {
-    img: "/public/brands/infin.png",
+    img: "/brands/infin.png",
   },
 
   {
-    img: "/public/brands/len.png",
+    img: "/brands/len.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
   {
-    img: "/public/brands/son.png",
+    img: "/brands/son.png",
   },
 
   {
-    img: "/public/brands/len.png",
+    img: "/brands/len.png",
   },
   {
-    img: "/public/brands/len.png",
+    img: "/brands/len.png",
   },
   {
-    img: "/public/brands/len.png",
+    img: "/brands/len.png",
   },
   {
-    img: "/public/brands/len.png",
+    img: "/brands/len.png",
   },
   {
-    img: "/public/brands/len.png",
+    img: "/brands/len.png",
   },
   {
-    img: "/public/brands/len.png",
+    img: "/brands/len.png",
   },
   {
-    img: "/public/brands/infin.png",
+    img: "/brands/infin.png",
   },
 ];
 

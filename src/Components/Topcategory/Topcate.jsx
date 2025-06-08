@@ -60,31 +60,31 @@ const Topcategory = () => {
 const data = [
   {
     name: "Mens's Fashion ",
-    img: "/public/images/topcate/1681511865180shirt.jpeg",
+    img: "/images/topcate/1681511865180shirt.jpeg",
   },
 
   {
     name: "Gittar",
-    img: "/public/images/topcate/1681511964020لهففشق.jpeg",
+    img: "/images/topcate/1681511964020لهففشق.jpeg",
   },
 
   {
     name: "lkmvglrkmgv",
-    img: "/public/images/topcate/1681511865180shirt.jpeg",
+    img: "/images/topcate/1681511865180shirt.jpeg",
   },
 
   {
     name: "dress",
-    img: "/public/images/topcate/dress.jpeg",
+    img: "/images/topcate/dress.jpeg",
   },
   {
     name: "Phone",
-    img: "/public/images/topcate/1681511156008phone.png",
+    img: "/images/topcate/1681511156008phone.png",
   },
 
   {
     name: "CoffeMachine",
-    img: "/public/images/topcate/1681511392672.png",
+    img: "/images/topcate/1681511392672.png",
   },
 ];
 
