@@ -70,7 +70,8 @@ width: 90px;
 
   .landingbg{
 
-    background-color: #0c1719;
+    background-color: black;
+    /* padding: 5rem 0; */
   }
 
  .ourproduct{
@@ -154,3 +155,31 @@ cursor: pointer;
   padding: .5rem 7rem;
   margin-top: 2rem;
 }
+
+.mySwiper {
+  width: 100%;
+  height: auto;
+}
+
+.title-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* or use 2 for two lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.brandname{
+  color: #b81f33;
+}
+
+
+.bandon{
+  height: 60vh;
+}
+
+/* .pranon{
+  height: 100vh;
+
+} */

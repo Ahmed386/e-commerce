@@ -11,6 +11,8 @@ import Cart from './Components/cart/Cart';
 import Productpage from './Components/productpage/Productpage';
 import Register from './Components/register/Register';
 import Login from './Components/login/Login';
+import Showproduct from "./Components/showproduct/Showproduct";
+import Brandshowing from "./Components/showbrand/Brandshowing";
 
 const App = () => {
 
@@ -45,10 +47,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
-        <Route path="brands" element={<Brandpage />} />
-        <Route path="wishlist" element={<Wishlist />} />
+        <Route path="/brands" element={<Brandpage />} />
+        <Route path="/wishlist" element={<Wishlist />} />
         <Route path="cart" element={<Cart />} />
         <Route path="product" element={<Productpage />} />
+        <Route path="/brandshow/:id" element={<Brandshowing />} />
+        <Route path="/showproduct/:id" element={<Showproduct />} />
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />} />
       </Routes>

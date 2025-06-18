@@ -1,6 +1,6 @@
 import axios from "axios";
 import Joi from "joi";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -17,6 +17,7 @@ const Register = () => {
     name: "",
     email: "",
     password: "",
+    rePassword:"",
     phone: "",
   });
 
@@ -45,6 +46,9 @@ const Register = () => {
   function submitUser(e) {
     e.preventDefault();
 
+    // ahmed();
+
+
     const validationSchema = Joi.object({
       name: Joi.string().alphanum().min(3).max(30).required(),
 
@@ -53,6 +57,11 @@ const Register = () => {
         .required(),
 
       password: Joi.string()
+        .pattern(new RegExp("^[a-zA-Z0-9]{3,30}$"))
+        .required()
+        .min(5),
+
+      rePassword: Joi.string()
         .pattern(new RegExp("^[a-zA-Z0-9]{3,30}$"))
         .required()
         .min(5),
@@ -71,8 +80,12 @@ const Register = () => {
       console.log(joiErrorList);
 
       setJoiErrors(joiErrorList);
+
+
     }
   }
+
+  
 
   function getSpecificError(key) {
     if (joierrors != null ){
@@ -96,7 +109,18 @@ const Register = () => {
   }
 
 
+  // async function ahmed(){
+  //   let res = await axios.post(
+  //     `https://ecommerce.routemisr.com/api/v1/auth/signup`,
+  //     user
+  //   );
 
+  //   console.log(res);
+    
+  // }
+
+
+  
 
 
 
@@ -187,7 +211,29 @@ const Register = () => {
           />
 
           {getSpecificError("password") ? (
-            <div className="text-danger">password must be from 6 to 15 character and use * or # </div>
+            <div className="text-danger">
+              password must be from 6 to 15 character and use * or #{" "}
+            </div>
+          ) : (
+            ""
+          )}
+
+          <label htmlFor="rePassword" className="fs-5 mb-1">
+            Re*Password
+          </label>
+
+          <input
+            id="rePassword"
+            type="Password"
+            className="form-control mb-3"
+            placeholder="Enter your password again"
+            onChange={getUserInputs}
+          />
+
+          {getSpecificError("rePassword") ? (
+            <div className="text-danger">
+              password must be from 6 to 15 character and use * or #{" "}
+            </div>
           ) : (
             ""
           )}
