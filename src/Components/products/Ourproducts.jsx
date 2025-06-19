@@ -63,7 +63,7 @@ const Ourproducts = () => {
 
           <div className="row">
             <Tabs
-              defaultActiveKey="profile"
+              defaultActiveKey="Men's Fashion"
               id="fill-tab-example"
               className="mb-5"
               fill
