@@ -170,8 +170,8 @@ cursor: pointer;
   white-space: normal;
 }
 
-.brandname{
-  color: #b81f33;
+.brandname  {
+  color: #b81f33 !important
 }
 
 
@@ -183,3 +183,7 @@ cursor: pointer;
   height: 100vh;
 
 } */
+
+.navbar-toggler-icon {
+  background-color: #b81f33;
+}

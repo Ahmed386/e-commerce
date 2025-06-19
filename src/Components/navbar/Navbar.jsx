@@ -24,10 +24,10 @@ export default function Navbar({ setOpenProject }) {
       <nav className="navbar navbar-expand-lg  px-2 border-bottom border-white border-opacity-10 ">
         <div className="container-fluid">
           <Link className="navbar-brand text-white logo" to="/home">
-            Ahmed TC
+            E-commerce
           </Link>
           <button
-            className="navbar-toggler  "
+            className="navbar-toggler   "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -35,8 +35,8 @@ export default function Navbar({ setOpenProject }) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="bi bi-layout-text-sidebar"></i>
-            {/* <span className="navbar-toggler-icon bg-white rounded"></span> */}
+            
+            <span className="navbar-toggler-icon  rounded"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto mb-2 mb-lg-0 menu ">
