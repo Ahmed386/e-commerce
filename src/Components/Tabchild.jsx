@@ -7,17 +7,56 @@ import { IoEyeOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { BsCartPlus } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import axios from "axios"; // Make sure axios is imported
+import { toast } from "react-toastify"; // Optional for user feedback
+import "react-toastify/dist/ReactToastify.css";
+
+
 
 const Tabchild = ({ product, type }) => {
-
-
-    // console.log(type);
-
-    
+  // console.log(type);
+  const token = localStorage.getItem("userToken"); // ✅ Must be saved in login
+  console.log("Current token:", token); 
   const navigate = useNavigate();
 
+  const addToCart = async (productId) => {
+    try {
+      const token = localStorage.getItem("userToken");
+
+      const { data } = await axios.post(
+        "https://ecommerce.routemisr.com/api/v1/cart",
+        { productId },
+        {
+          headers: {
+            token: token, // ✅ Try this first
+            // Authorization: `Bearer ${token}` // ← try this if the first doesn't work
+          },
+        }
+      );
+
+      toast.success("Product added to cart!", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+
+      // navigate("/cart"); // if needed
+    } catch (error) {
+      toast.error("Failed to add to cart.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+
+      console.error(
+        "Add to cart error:",
+        error.response?.data || error.message
+      );
+    }
+  };
+  
+  
+
   const filteredProducts = product
-    ? product.filter( pro => pro.category.name === type)
+    ? product.filter((pro) => pro.category.name === type)
     : [];
 
   return (
@@ -44,7 +83,11 @@ const Tabchild = ({ product, type }) => {
                       <CiHeart className=" fs-3 my-2" />
                     </div>
                     <div>
-                      <BsCartPlus className=" fs-3 my-2" />
+                      <BsCartPlus
+                        className="fs-3 my-2"
+                        onClick={() => addToCart(pro.id)}
+                        // style={{ cursor: "pointer" }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -59,6 +102,6 @@ const Tabchild = ({ product, type }) => {
       </div>
     </div>
   );
-};
+};;
 
 export default Tabchild

@@ -7,7 +7,8 @@ import { CiHeart } from "react-icons/ci";
 import { BsCartPlus } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 import Loader from './../loading/Loader';
-
+import { toast } from "react-toastify"; // Make sure this is installed
+import "react-toastify/dist/ReactToastify.css";
 
 const Productpage = () => {
 
@@ -32,6 +33,40 @@ const Productpage = () => {
     console.log(dataInner);
 
   }
+
+
+  const token = localStorage.getItem("userToken");
+
+  const addToCart = async (productId) => {
+    try {
+      const { data } = await axios.post(
+        "https://ecommerce.routemisr.com/api/v1/cart",
+        { productId },
+        {
+          headers: {
+            token: token,
+          },
+        }
+      );
+
+      toast.success("Product added to cart!", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+
+      // Optional: Redirect or update cart count here
+    } catch (error) {
+      toast.error("Failed to add to cart.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      console.error(
+        "Add to cart error:",
+        error.response?.data || error.message
+      );
+    }
+  };
+
 
   useEffect(() => {
     getAllProducta();
@@ -77,14 +112,19 @@ const Productpage = () => {
                           <div>
                             <IoEyeOutline
                               className=" fs-3 mb-1"
-                              onClick={() => navigate(`/showproduct/${product.id}`)}
+                              onClick={() =>
+                                navigate(`/showproduct/${product.id}`)
+                              }
                             />
                           </div>
                           <div>
                             <CiHeart className=" fs-3 my-2" />
                           </div>
                           <div>
-                            <BsCartPlus className=" fs-3 my-2" />
+                            <BsCartPlus
+                              className=" fs-3 my-2"
+                              onClick={() => addToCart(product._id)}
+                            />
                           </div>
                         </div>
                       </div>

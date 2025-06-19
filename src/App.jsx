@@ -13,6 +13,7 @@ import Register from './Components/register/Register';
 import Login from './Components/login/Login';
 import Showproduct from "./Components/showproduct/Showproduct";
 import Brandshowing from "./Components/showbrand/Brandshowing";
+// import { ToastContainer } from "react-toastify";
 
 const App = () => {
 
@@ -43,6 +44,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
+      {/* <ToastContainer /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
