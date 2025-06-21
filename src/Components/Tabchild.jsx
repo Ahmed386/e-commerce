@@ -40,7 +40,7 @@ const Tabchild = ({ product, type }) => {
 
       // navigate("/cart"); // if needed
     } catch (error) {
-      toast.error("Failed to add to cart.", {
+      toast.error("Firstly Login.. Failed to add to cart. ", {
         position: "top-right",
         autoClose: 2000,
       });
