@@ -68,8 +68,8 @@ const Footer = () => {
                   className="form-control "
                   placeholder="Enter your emil"
                 />
-                <button class="btn btn-danger   mt-3">
-                  <i class="fa-solid fa-paper-plane"></i> subscribe
+                <button className="btn btn-danger   mt-3">
+                  <i className="fa-solid fa-paper-plane"></i> subscribe
                 </button>
               </div>
             </div>

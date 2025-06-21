@@ -44,7 +44,6 @@ useEffect(() => {
 
 }, [id])
 
-console.log(specificBrand);
 
 return (
   <>

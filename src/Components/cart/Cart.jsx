@@ -49,7 +49,7 @@ const Cart = () => {
         }
       );
 
-      console.log("Cart Data:", data);
+      // console.log("Cart Data:", data);
       setCartItems(data.data.products); // adjust based on API response
     } catch (error) {
       console.error("Error fetching cart data:", error);
@@ -103,15 +103,15 @@ const Cart = () => {
   if (!cartItems) return <Loader />;
 
   return (
-    <div className="container py-4">
+    <div className="container  carto">
       <h3 className="text-center mb-3">🛒 Your Shopping Cart</h3>
 
       {cartItems.length === 0 ? (
         <div className="alert alert-warning text-center py-4">
           <i className="fa-solid fa-cart-plus fs-4 me-2 text-danger"></i>
-          <strong>No products in the cart.</strong>
+          <strong>Loading Your Cart...</strong>
           <br />
-          <Link to="/home" className="btn btn-outline-primary mt-3 btn-sm">
+          <Link to="/home" className="btn btn-outline-danger mt-3 btn-sm">
             Back to Home
           </Link>
         </div>

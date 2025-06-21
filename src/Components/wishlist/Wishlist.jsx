@@ -14,7 +14,7 @@ const Wishlist = () => {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 24 24"
             class=" ms-2 fs-1 cart mb-2 text-danger"
             height="1em"

@@ -4,61 +4,43 @@ body{
     box-sizing: border-box;
 }
 
-nav {
-    background-color: #0c1719 !important;
-    z-index: 999;
-    width: 100%;
-    max-width: 100%;
-  }
-  .menu li a {
-    color: #8b9092 !important;
-    /* border-bottom: 0 solid var(--prim-color); */
-    transition: 0.3s all;
-  }
-  .menu li:hover a {
-    color: #b81f33 !important;
-   /* border-bottom: 1px solid white; */
 
-  }
 
-  .navbar-toggler:focus {
-    box-shadow: none !important;
-  }
+ 
 
-  .navbar-toggler:focus {
-    box-shadow: none !important;
-  }
 
-  .navbar-toggler-icon {
-    width: 1.7em !important;
-    height: 1.7em !important;
+  .nav-link:hover {
+    color: #0dcaf0 !important; 
   }
-
-  /* .menu li::before{
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 2px;
-    background-color: white;
-    bottom: 10px;
-  } */
   
-  .menu li:hover::before{
-width: 90px;
+
+  /* :root {
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
   }
-
-  /* .menu li:hover {
-    animation: line 1s
-  } */
-  .menu a {
-    font-size: 22px;
-    color: #777;
-    text-decoration: none;
-    transition: all 0.45s;
+  
+  .glass-nav {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+    transition: background-color 0.3s ease-in-out;
   }
-
-
-
+  
+  .navbar .nav-link,
+  .navbar .navbar-brand {
+    color: rgb(8, 8, 8) !important;
+    transition: color 0.2s;
+    font-size: 19px;
+    font-weight: 800;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #0dcaf0 !important;
+  }
+  
+.carto{
+  padding:6rem 0 ;
+} */
 
 
   /* End navBar */

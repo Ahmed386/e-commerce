@@ -14,20 +14,12 @@ import Tabchild from './../Tabchild';
 
 const Ourproducts = () => {
 
-  // const [pro , setPro] = useState()
 
-  // async function getpro(){
-  //   let {data} = axios.get(`api`)
-
-  //   setPro(data.info)
-
-  // }
 
   const [product , setProduct] = useState()
 
   async function getNavproduct() {
     let { data } = await axios.get(`https://ecommerce.routemisr.com/api/v1/products`);
-    console.log(data.data);
 
     let breef = data.data;
   setProduct(breef);

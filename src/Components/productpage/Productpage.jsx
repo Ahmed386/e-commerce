@@ -30,7 +30,7 @@ const Productpage = () => {
 
     setAllProducts(dataInner);
 
-    console.log(dataInner);
+ 
 
   }
 

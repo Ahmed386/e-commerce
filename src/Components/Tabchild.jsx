@@ -7,16 +7,15 @@ import { IoEyeOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { BsCartPlus } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
-import axios from "axios"; // Make sure axios is imported
-import { toast } from "react-toastify"; // Optional for user feedback
+import axios from "axios"; 
+import { toast } from "react-toastify"; 
 import "react-toastify/dist/ReactToastify.css";
 
 
 
 const Tabchild = ({ product, type }) => {
-  // console.log(type);
   const token = localStorage.getItem("userToken"); // ✅ Must be saved in login
-  console.log("Current token:", token); 
+  // console.log("Current token:", token); 
   const navigate = useNavigate();
 
   const addToCart = async (productId) => {
@@ -52,6 +51,30 @@ const Tabchild = ({ product, type }) => {
       );
     }
   };
+  
+  // const addToCart = async (productId) => {
+  //   try {
+  //     const token = localStorage.getItem("userToken");
+
+  //     const { data } = await axios.post(
+  //       "https://ecommerce.routemisr.com/api/v1/cart",
+  //       { productId },
+  //       {
+  //         headers: {
+  //           token: token,
+  //         },
+  //       }
+  //     );
+
+  //     alert("Product added to cart!");
+  //   } catch (error) {
+  //     alert("Failed to add product to cart.");
+  //     console.error(
+  //       "Add to cart error:",
+  //       error.response?.data || error.message
+  //     );
+  //   }
+  // };
   
   
 
