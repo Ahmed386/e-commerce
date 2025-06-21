@@ -56,7 +56,7 @@ const Productpage = () => {
 
       // Optional: Redirect or update cart count here
     } catch (error) {
-      toast.error("Failed to add to cart.", {
+      toast.error("Firstly login..Failed to add to cart.", {
         position: "top-right",
         autoClose: 2000,
       });

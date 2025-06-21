@@ -52,29 +52,7 @@ const Tabchild = ({ product, type }) => {
     }
   };
   
-  // const addToCart = async (productId) => {
-  //   try {
-  //     const token = localStorage.getItem("userToken");
-
-  //     const { data } = await axios.post(
-  //       "https://ecommerce.routemisr.com/api/v1/cart",
-  //       { productId },
-  //       {
-  //         headers: {
-  //           token: token,
-  //         },
-  //       }
-  //     );
-
-  //     alert("Product added to cart!");
-  //   } catch (error) {
-  //     alert("Failed to add product to cart.");
-  //     console.error(
-  //       "Add to cart error:",
-  //       error.response?.data || error.message
-  //     );
-  //   }
-  // };
+  
   
   
 
@@ -109,7 +87,7 @@ const Tabchild = ({ product, type }) => {
                       <BsCartPlus
                         className="fs-3 my-2"
                         onClick={() => addToCart(pro.id)}
-                        // style={{ cursor: "pointer" }}
+                        
                       />
                     </div>
                   </div>
