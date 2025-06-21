@@ -7,7 +7,9 @@ import * as Yup from "yup";
 
 const Login = () => {
   const navigate = useNavigate();
-  // localStorage.setItem("userToken", res.data.token);
+
+
+  window.dispatchEvent(new Event("storage"));
 
   // Validation schema using Yup (like Joi)
   const validationSchema = Yup.object({
