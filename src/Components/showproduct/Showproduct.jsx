@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import Loader from "./../loading/Loader";
 import { motion } from "framer-motion";
-import { toast } from "react-toastify"; // ✅ Added for toast
+import { toast } from "react-toastify"; 
 
 const Showproduct = () => {
   const { id } = useParams();
@@ -38,7 +38,7 @@ const Showproduct = () => {
     getproductdetails();
   }, [id]);
 
-  // ✅ Add to Cart function
+  //  Add to Cart function
   const addToCart = async () => {
     const token = localStorage.getItem("userToken");
     if (!token) {
@@ -79,34 +79,7 @@ const Showproduct = () => {
   return (
     <div className="container py-5 pranon">
       <div className="row">
-        {/* Images Column */}
-        {/* <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5, delay: 0.5 }}
-          className="col-md-6 d-flex"
-        >
-          <div className="me-3">
-            {images.map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt={`thumb-${index}`}
-                className="img-thumbnail mb-2"
-                style={{ width: "115px", height: "115px", cursor: "pointer" }}
-                onClick={() => setMainImage(img)}
-              />
-            ))}
-          </div>
-          {mainImage && (
-            <img
-              src={mainImage}
-              alt="main"
-              className="img-fluid rounded"
-              style={{ maxHeight: "500px", objectFit: "contain" }}
-            />
-          )}
-        </motion.div> */}
+        
 
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -114,7 +87,6 @@ const Showproduct = () => {
           transition={{ duration: 1.5, delay: 0.5 }}
           className="col-12 col-md-6 d-flex flex-column flex-md-row align-items-center mb-4"
         >
-          {/* Thumbnail Images */}
           <div className="d-flex flex-row flex-md-column justify-content-center me-md-3 mb-3 overflow-auto">
             {images.map((img, index) => (
               <img
@@ -139,7 +111,6 @@ const Showproduct = () => {
           )}
         </motion.div>
 
-        {/* Product Info */}
         <motion.div
           className="col-6"
           initial={{ opacity: 0, x: 100 }}
@@ -161,7 +132,6 @@ const Showproduct = () => {
           </p>
           <p>{shownProduct.ratingsQuantity} Customer Reviews</p>
 
-          {/* ✅ Add To Cart button now working */}
           <button className="btn btn-danger me-2 mb-2" onClick={addToCart}>
             Add To Cart
           </button>

@@ -14,32 +14,6 @@ body{
   }
   
 
-  /* :root {
-    --glass-bg: rgba(255, 255, 255, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.2);
-  }
-  
-  .glass-nav {
-    background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--glass-border);
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .navbar .nav-link,
-  .navbar .navbar-brand {
-    color: rgb(8, 8, 8) !important;
-    transition: color 0.2s;
-    font-size: 19px;
-    font-weight: 800;
-  }
-  
-  .navbar .nav-link:hover {
-    color: #0dcaf0 !important;
-  }
-  
-
-
 
   /* End navBar */
 
@@ -53,7 +27,6 @@ body{
   .landingbg{
 
     background-color: black;
-    /* padding: 5rem 0; */
   }
 
  .ourproduct{
@@ -145,7 +118,7 @@ cursor: pointer;
 
 .title-truncate {
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* or use 2 for two lines */
+  -webkit-line-clamp: 1; 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -161,10 +134,6 @@ cursor: pointer;
   height: 60vh;
 }
 
-/* .pranon{
-  height: 100vh;
-
-} */
 
 .navbar-toggler-icon {
   background-color: #b81f33;

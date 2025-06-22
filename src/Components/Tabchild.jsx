@@ -14,7 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 const Tabchild = ({ product, type }) => {
-  const token = localStorage.getItem("userToken"); // ✅ Must be saved in login
+  const token = localStorage.getItem("userToken"); //  Must be saved in login
   // console.log("Current token:", token); 
   const navigate = useNavigate();
 
@@ -27,8 +27,7 @@ const Tabchild = ({ product, type }) => {
         { productId },
         {
           headers: {
-            token: token, // ✅ Try this first
-            // Authorization: `Bearer ${token}` // ← try this if the first doesn't work
+            token: token, 
           },
         }
       );

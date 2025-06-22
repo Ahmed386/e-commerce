@@ -4,6 +4,8 @@ import  { useState } from "react";
 import { useEffect } from 'react';
 import Loader from './../loading/Loader';
 import { useNavigate } from 'react-router-dom';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Brandpage = () => {
@@ -23,7 +25,6 @@ const Brandpage = () => {
     setAllBrandsimage(images);
   }
 
-  //curl --location 'https://ecommerce.routemisr.com/api/v1/brands/64089ceb24b25627a2531596'
 
 
 
@@ -32,6 +33,13 @@ const Brandpage = () => {
   useEffect(() => {
     getAllBrands();
 
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
   }, []);
 
   if (!brandsimage) return <Loader />;
@@ -48,10 +56,11 @@ const Brandpage = () => {
             {brandsimage?.map((ban, index) => (
               <div
                 className="col-lg-3 col-md-6 col-sm-12 mb-4"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
                 key={index}
                 onClick={() => {
                   navigate(`/brandshow/${ban._id}`);
-                  
                 }}
               >
                 <div className="brandscal text-center border rounded ">
@@ -71,84 +80,6 @@ const Brandpage = () => {
 }
 
 
-const data = [
-  {
-    img: "/brands/canon.png",
-  },
 
-  {
-    img: "/brands/del.png",
-  },
-
-  {
-    img: "/brands/infin.png",
-  },
-
-  {
-    img: "/brands/infin.png",
-  },
-
-  {
-    img: "/brands/len.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-  {
-    img: "/brands/son.png",
-  },
-
-  {
-    img: "/brands/len.png",
-  },
-  {
-    img: "/brands/len.png",
-  },
-  {
-    img: "/brands/len.png",
-  },
-  {
-    img: "/brands/len.png",
-  },
-  {
-    img: "/brands/len.png",
-  },
-  {
-    img: "/brands/len.png",
-  },
-  {
-    img: "/brands/infin.png",
-  },
-];
 
 export default Brandpage

@@ -6,16 +6,7 @@ import { motion } from "framer-motion";
 const Brandshowing = () => {
 
 
-  // async function getSpecificBrand() {
-  //     let { data } = await axios.get(
-  //       `https://ecommerce.routemisr.com/api/v1/brands/64089ceb24b25627a2531596`
-  //     );
 
-  //     let res = data.data
-
-  //     console.log(res);
-      
-  // }
 
 const [specificBrand , setSpecificBrand] = useState(null)
 let {id} = useParams()
@@ -29,7 +20,6 @@ async function getSpecificBrand() {
     
     let brandData = data.data
 
-    // console.log(brandData);
 
     setSpecificBrand(brandData);
 

@@ -1,27 +1,4 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom';
 
-// const Cart = () => {
-//   return (
-//     <>
-//       <div>
-//         <div className="brandss">
-//           <h1 className="text-center">Shopping Cart</h1>
-//         </div>
-
-//         <div class="productContent  text-center p-5">
-//           <i class="fa-solid fa-cart-plus ms-2 fs-1 cart mb-2 text-danger"></i>
-//           <h5 class="">There is no Products !</h5>
-//           <Link class="text-primary" to="/home">
-//             back to home
-//           </Link>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default Cart
 
 
 import React, { useEffect, useState } from "react";
@@ -42,15 +19,15 @@ const Cart = () => {
         "https://ecommerce.routemisr.com/api/v1/cart",
         {
           headers: {
-            token: token, // ✅ MUST include this!
+            token: token, 
             // or try this if the API requires it:
             // Authorization: `Bearer ${token}`
           },
         }
       );
 
-      // console.log("Cart Data:", data);
-      setCartItems(data.data.products); // adjust based on API response
+      
+      setCartItems(data.data.products); 
     } catch (error) {
       console.error("Error fetching cart data:", error);
     }

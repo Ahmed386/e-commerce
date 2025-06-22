@@ -11,7 +11,7 @@ const Login = () => {
 
   window.dispatchEvent(new Event("storage"));
 
-  // Validation schema using Yup (like Joi)
+  // Validation schema using Yup 
   const validationSchema = Yup.object({
     email: Yup.string()
       .email("Invalid email format")

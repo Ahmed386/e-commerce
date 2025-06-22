@@ -6,8 +6,7 @@ import { IoEyeOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { BsCartPlus } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
-// import { axios } from 'axios';
-// import { useState } from 'react';
+
 import axios  from 'axios';
 import Tabchild from './../Tabchild';
 

@@ -9,6 +9,8 @@ import { useNavigate } from 'react-router-dom';
 import Loader from './../loading/Loader';
 import { toast } from "react-toastify"; // Make sure this is installed
 import "react-toastify/dist/ReactToastify.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Productpage = () => {
 
@@ -74,6 +76,13 @@ const Productpage = () => {
   
     
   }, [])
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   
 
 
@@ -97,15 +106,15 @@ const Productpage = () => {
                 <div
                   className="col-lg-3 col-md-6 col-sm-12 p-2 mb-2"
                   key={index}
+                  data-aos="flip-left"
+                  data-aos-delay={index * 100}
                 >
-                  {/* <img src={product.imageCover} alt="" className="w-100" /> */}
-
                   <Card style={{ width: "15rem" }}>
                     <div className="position-relative overflow-hidden layerwrapper ">
                       <Card.Img
                         variant="top"
                         src={product.imageCover}
-                        className="imglayer  "
+                        className="imglayer"
                       />
                       <div className="position-absolute shad d-flex justify-content-end  p-1 ">
                         <div className="p-3 m-1 layericons text-white h-50 rounded">

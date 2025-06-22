@@ -1,18 +1,14 @@
-// MySwiper.jsx
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination,  } from "swiper/modules";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-// import "swiper/css/navigation";
 
 const MySwiper = () => {
   return (
     <div className="container-fluid m-0 p-0  ">
       <div className="m-0 p-0 ">
-        {/* <h2 className="text-center mb-4">Featured Products</h2> */}
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={30}

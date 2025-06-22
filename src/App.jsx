@@ -13,40 +13,15 @@ import Register from './Components/register/Register';
 import Login from './Components/login/Login';
 import Showproduct from "./Components/showproduct/Showproduct";
 import Brandshowing from "./Components/showbrand/Brandshowing";
-// import { ToastContainer } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
 
-  // function intial () {
-  //   console.log('run')
-  //   return 4 
-  // }
-
-
-  // const [count, setCount] = useState(4);
-  // const [theme, setTheme] = useState("blue");
-
-  // function decrement () {
-  //   setCount ( perValue => perValue -1 );
-  //   setTheme("green")
-  // }
-
-
-  // function increment (){
-  //   setCount(prevalue => prevalue + 1);
-  //   setTheme("yeelow");
-
-  // }
-
-  // function mult() {
-  //   setCount(prevalue => prevalue * 2);
-  // }
+  
   return (
     <Router>
       <Navbar />
-      {/* <ToastContainer /> */}
       <ToastContainer position="top-right" autoClose={2000} />
 
       <Routes>
@@ -66,23 +41,7 @@ const App = () => {
       <Footer />
     </Router>
 
-    // <>
-    //   <div className="d-flex justify-content-center align-items-center p-5 ">
-    //     <button onClick={decrement} className="btn btn-danger btn-lg m-2">
-    //       -
-    //     </button>
-
-    //     <span className="fs-1">{count}</span>
-    //     <span className="fs-1">{theme}</span>
-
-    //     <button onClick={increment} className="btn btn-primary btn-lg m-2">
-    //       +
-    //     </button>
-    //     <button onClick={mult} className="btn btn-warning btn-lg m-2">
-    //       *
-    //     </button>
-    //   </div>
-    // </>
+  
   );
 };
 
