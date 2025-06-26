@@ -302,3 +302,7 @@ header a{
         font-size: 30px;
     }
 }
+
+.carousel .list .item img {
+    filter: brightness(60%) contrast(110%) saturate(120%);
+  }

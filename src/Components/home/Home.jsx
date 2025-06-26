@@ -33,7 +33,7 @@ const Home = () => {
       <Ourproducts />
       <Whatweoffer />
       <Brands />
-      <Footer />
+      
     </>
   );
 };
