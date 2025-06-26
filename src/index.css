@@ -5,7 +5,9 @@ body{
 }
 
 
-
+.aann{
+  overflow: hidden;
+}
  
 
 
@@ -138,3 +140,5 @@ cursor: pointer;
 .navbar-toggler-icon {
   background-color: #b81f33;
 }
+
+

@@ -5,10 +5,9 @@ import MySwiper from './../myswiper/Myswipper';
 const Landing = () => {
   return (
     <>
-     
-
-      <MySwiper /> 
-
+      <div className='aann'>
+        <MySwiper />
+      </div>
     </>
   );
 }
