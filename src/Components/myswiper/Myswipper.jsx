@@ -64,21 +64,25 @@ const slides = [
     image: "/images/money-card-business-credit-card-50987.webp",
     heading: "Top Rated Collection",
     subheading: "Hurry up before the stock runs out",
+    thumtitle: "card treatment",
   },
   {
     image: "/images/pexels-photo-230544.webp",
     heading: "New Arrivals",
     subheading: "Fresh styles just dropped",
+    thumtitle: "order now",
   },
   {
     image: "/images/pexels-photo-3944405.webp",
     heading: "Limited Time Offer",
     subheading: "Discover our most loved products!",
+    thumtitle: "offers",
   },
   {
     image: "/images/pexels-photo-5849594-4.webp",
     heading: "Shop the Look",
     subheading: "Trendy picks curated for you",
+    thumtitle: "fawry transaction",
   },
 ];
 
@@ -151,8 +155,8 @@ const MySwiper = () => {
           <div className="item" key={idx}>
             <img src={slide.image} alt="" />
             <div className="content">
-              <div className="title"> Slider</div>
-              <div className="des">description</div>
+              <div className="title">{slide.thumtitle} </div>
+              <div className="des"></div>
             </div>
           </div>
         ))}

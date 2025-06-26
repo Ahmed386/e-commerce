@@ -46,7 +46,7 @@ export default function Navbar() {
         <Link className="navbar-brand text-white fw-bold fs-4" to="/home">
           <img
             src="/logoo.png"
-            alt="E-commerce Logo"
+            alt=" Logo"
             style={{
               className: "",
               height: "30px", // Adjust to match text height
