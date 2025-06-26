@@ -44,7 +44,16 @@ export default function Navbar() {
     >
       <div className="container-fluid">
         <Link className="navbar-brand text-white fw-bold fs-4" to="/home">
-          E-commerce
+          <img
+            src="/public/logoi.png"
+            alt="E-commerce Logo"
+            style={{
+              className:"",
+              height: "30px", // Adjust to match text height
+              width: "180px", // Maintain aspect ratio
+              objectFit: "cover",
+            }}
+          />{" "}
         </Link>
 
         <button
@@ -53,7 +62,7 @@ export default function Navbar() {
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
-          <i className="fa-solid fa-bars text-white fs-4"></i>
+          <i className="fa-solid fa-bars text-info fs-4"></i>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -73,24 +82,24 @@ export default function Navbar() {
           <div className="d-flex">
             {userName && (
               <span className="badge  fs-6 px-3 py-2 me-3">
-                <i className="fa fa-user me-1"></i> {userName}
+                <i className="fa fa-user text-info me-1"></i> {userName}
               </span>
             )}
 
             {isLoggedIn ? (
               <button
-                className="btn btn-outline-light btn-sm me-2"
+                className="btn btn-outline-info fw-bold btn-sm me-2"
                 onClick={handleLogout}
               >
                 Logout
               </button>
             ) : (
               <>
-                <Link className="btn btn-outline-light btn-sm me-2" to="/login">
+                <Link className="btn btn-outline-light fw-bold btn-sm me-2" to="/login">
                   Login
                 </Link>
                 <Link
-                  className="btn btn-outline-danger text-white btn-sm"
+                  className="btn btn-outline-danger fw-bold text-white btn-sm"
                   to="/register"
                 >
                   Register

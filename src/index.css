@@ -75,7 +75,7 @@ body{
 
 
 .member p:hover , .member ul li:hover {
-color: #b81f33;
+color: #0dcaf0;
 cursor: pointer;
 }
 
@@ -99,7 +99,7 @@ cursor: pointer;
 
 .layericons div:hover {
   cursor: pointer;
-  color: #b81f33;
+  color: #0dcaf0;
   
 }
 
@@ -140,5 +140,7 @@ cursor: pointer;
 .navbar-toggler-icon {
   background-color: #b81f33;
 }
-
+.logoe{
+  filter: sepia(1) saturate(5) hue-rotate(-10deg) brightness(0.9) !important ;
+}
 
