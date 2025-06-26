@@ -30,9 +30,14 @@ const Login = () => {
       );
 
       if (res.data.message === "success") {
+        
+        // localStorage.setItem("userToken", res.data.token);
         localStorage.setItem("userToken", res.data.token);
+        localStorage.setItem("userName", res.data.user.name);
 
         navigate("/home");
+        // console.log(res.data.user.name);
+
 
       } else {
         setErrors({ api: res.data.message });

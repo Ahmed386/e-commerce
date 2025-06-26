@@ -64,7 +64,7 @@ const Tabchild = ({ product, type }) => {
       <div className="row ">
         {filteredProducts?.map((pro, index) => (
           <div className="  col-sm-12 col-md-6 col-lg-3 mb-4  " key={index}>
-            <Card style={{ width: "15rem" }}>
+            <Card style={{ width: "16rem" }}>
               <div className="position-relative overflow-hidden layerwrapper">
                 <Card.Img
                   variant="top"

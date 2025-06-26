@@ -9,6 +9,7 @@ export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
   const location = useLocation(); // <== this detects route change
+  const userName = localStorage.getItem("userName");
 
   // Check token on every route change
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function Navbar() {
 
   const handleLogout = () => {
     localStorage.removeItem("userToken");
+    localStorage.removeItem("userName");
     setIsLoggedIn(false);
     navigate("/login");
   };
@@ -69,6 +71,12 @@ export default function Navbar() {
           </ul>
 
           <div className="d-flex">
+            {userName && (
+              <span className="badge  fs-6 px-3 py-2 me-3">
+                <i className="fa fa-user me-1"></i> {userName}
+              </span>
+            )}
+
             {isLoggedIn ? (
               <button
                 className="btn btn-outline-light btn-sm me-2"
