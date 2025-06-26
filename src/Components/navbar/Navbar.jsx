@@ -45,10 +45,10 @@ export default function Navbar() {
       <div className="container-fluid">
         <Link className="navbar-brand text-white fw-bold fs-4" to="/home">
           <img
-            src="/public/logoi.png"
+            src="/logoo.png"
             alt="E-commerce Logo"
             style={{
-              className:"",
+              className: "",
               height: "30px", // Adjust to match text height
               width: "180px", // Maintain aspect ratio
               objectFit: "cover",
@@ -95,7 +95,10 @@ export default function Navbar() {
               </button>
             ) : (
               <>
-                <Link className="btn btn-outline-light fw-bold btn-sm me-2" to="/login">
+                <Link
+                  className="btn btn-outline-light fw-bold btn-sm me-2"
+                  to="/login"
+                >
                   Login
                 </Link>
                 <Link
