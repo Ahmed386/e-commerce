@@ -100,7 +100,7 @@ const Productpage = () => {
         <div className="brandss">
           <h1 className="text-center mb-4">All Products</h1>
 
-          <div className="container">
+          <div className="container  d-flex justify-content-center">
             <div className="row">
               {allproducts?.map((product, index) => (
                 <div

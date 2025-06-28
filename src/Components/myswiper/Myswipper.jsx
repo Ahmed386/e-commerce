@@ -93,7 +93,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./carousel.css";
 
 const timeRunning = 3000;
-const timeAutoNext = 7000;
+const timeAutoNext = 6000;
 
 const MySwiper = () => {
   const [mainSlides, setMainSlides] = useState(slides);
@@ -156,7 +156,7 @@ const MySwiper = () => {
             <img src={slide.image} alt="" />
             <div className="content">
               <div className="title">{slide.thumtitle} </div>
-              <div className="des"></div>
+              {/* <div className="des"></div> */}
             </div>
           </div>
         ))}

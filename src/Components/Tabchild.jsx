@@ -63,7 +63,10 @@ const Tabchild = ({ product, type }) => {
     <div className="container">
       <div className="row ">
         {filteredProducts?.map((pro, index) => (
-          <div className="  col-sm-12 col-md-6 col-lg-3 mb-4  " key={index}>
+          <div
+            className="  col-sm-12 col-md-6 col-lg-3 mb-4  d-flex justify-content-center  "
+            key={index}
+          >
             <Card style={{ width: "16rem" }}>
               <div className="position-relative overflow-hidden layerwrapper">
                 <Card.Img
@@ -86,7 +89,6 @@ const Tabchild = ({ product, type }) => {
                       <BsCartPlus
                         className="fs-3 my-2"
                         onClick={() => addToCart(pro.id)}
-                        
                       />
                     </div>
                   </div>
